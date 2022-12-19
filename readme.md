@@ -1,3 +1,6 @@
+---
+url: xfwbmlwi5ggipyqm
+---
 npm config set registry https://registry.npm.taobao.org
 ## hexo 相关命令
 ### 预览
@@ -7,6 +10,9 @@ yuque-hexo sync
 
 github token：
 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
+
+6eb17d8c2447accfc55762a9d34c7136
+
 
 
 "yuqueConfig": {

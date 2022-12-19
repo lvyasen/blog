@@ -101,9 +101,9 @@ theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: 'git'
-  repo: 'git@github.com:lvyasen/blog.git'
-  branch: 'main'
-  message: '博客'
+# deploy:
+#   type: 'git'
+#   repo: 'git@github.com:lvyasen/blog.git'
+#   branch: 'main'
+#   message: '博客'
 
