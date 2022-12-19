@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 'walker 的博客'
+subtitle: '学如逆水行舟不进则退'
+description: '学如逆水行舟不进则退'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: "walker"
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -90,20 +90,20 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
-ignore:
+# include:
+# exclude:
+# ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: 'git@gitee.com:lvyasen/study_blog.git'
-  branch: 'master'
-  message: ''
+  repo: 'git@github.com:lvyasen/blog.git'
+  branch: 'main'
+  message: '博客'
 
