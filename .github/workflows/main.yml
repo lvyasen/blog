@@ -9,10 +9,10 @@ jobs:
     env:
       TZ: Asia/Shanghai
     steps:
-    - name: Checkout codes
+    - name: 检查代码
       uses: actions/checkout@v2
 
-    - name: Setup node
+    - name: 启动 node
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
@@ -22,17 +22,17 @@ jobs:
         path: ~/.npm
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
-    - name: Install dependencies
+    - name: 安装环境依赖
       run: |
         npm install hexo-cli -g
         npm install yuque-hexo -g
         npm install
         yuque-hexo sync
 
-    - name: Generate files
+    - name: 生成博客
       run: hexo generate
 
-    - name: Deploy blog
+    - name: 部署博客
       run: |
         git clone "https://${{ secrets.GH_REF }}" deploy_git
         mv ./deploy_git/.git ./public
