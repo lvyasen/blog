@@ -39,8 +39,7 @@ jobs:
         git clone "https://${{ secrets.GH_REF }}" deploy_git
         mv ./deploy_git/.git ./public
         cd ./public
-        pwd
-        tail -10 index.html
+        echo "自动化构建  $(date +'%Y-%m-%d %H:%M:%S')" >> version.log
         git config user.name "walker"
         git config user.email "1853089362@163.com"
         git add .
