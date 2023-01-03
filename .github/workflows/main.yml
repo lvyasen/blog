@@ -44,4 +44,4 @@ jobs:
         git config user.email "1853089362@163.com"
         git add .
         git commit -m "自动化构建  $(date +'%Y-%m-%d %H:%M:%S')"
-        git push --force --quiet "https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}" origin:main
+        git push --force --quiet "https://${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}" main:main
